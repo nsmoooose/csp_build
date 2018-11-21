@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+cd csp
+
+# Make it possible for all the python scripts to be found
+# correctly when building and running the simulator.
+export PYTHONPATH=$(pwd)
+
+cd csp
+
+# This is needed the first time in order to check all
+# dependencies.
+python2 /usr/bin/scons config
+
+# Build the simulator.
+python2 /usr/bin/scons -j$(nproc) all
