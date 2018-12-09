@@ -56,7 +56,12 @@ This is done by specifying the image name::
 
   cd /home/user_x/Project/
   git clone https://github.com/nsmoooose/csp.git
+
+  # Configure to check that all dependencies are there.
+  sudo docker run --rm -it -v /home/henrikn/Projekt/csp/:/code/project csp:ubuntu_18.04 /code/configure
+
+  # Build the project.
   sudo docker run --rm -it -v /home/henrikn/Projekt/csp/:/code/project csp:ubuntu_18.04 /code/build
 
-  # 'Clean' the build
+  # 'Clean' the build.
   sudo docker run --rm -it -v /home/henrikn/Projekt/csp/:/code/project csp:ubuntu_18.04 /code/clean

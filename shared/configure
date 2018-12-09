@@ -9,5 +9,6 @@ export PYTHONPATH=$(pwd)
 
 cd csp
 
-# Build the simulator.
-python2 /usr/bin/scons -j$(nproc) all
+# This is needed the first time in order to check all
+# dependencies.
+python2 /usr/bin/scons config
