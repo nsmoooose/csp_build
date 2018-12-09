@@ -34,7 +34,25 @@ This is the list of images::
   csp                        fedora_29           cc0341243a81        About an hour ago   1.05GB
   csp                        fedora_28           4c09f2de3b1a        35 hours ago        1.05GB
 
-Build for a specific distribution is done by specifying the image name::
+
+Test build for all distributions
+--------------------------------
+
+This will build CSP on all the distributions::
+
+  mkdir csp_project
+  cd csp_project
+  git clone https://github.com/nsmoooose/csp.git
+  git clone https://github.com/nsmoooose/csp_build.git
+  cd csp_build
+  # Build all docker containers:
+  sudo make
+  sudo ./test_build_all.sh
+
+Build for a specific distribution
+---------------------------------
+
+This is done by specifying the image name::
 
   cd /home/user_x/Project/
   git clone https://github.com/nsmoooose/csp.git
