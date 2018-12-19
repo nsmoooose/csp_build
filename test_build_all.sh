@@ -6,4 +6,5 @@ for platform in ${platforms[@]}; do
 	docker run --rm -it -v $(pwd)/../:/code/project $platform /code/configure
 	docker run --rm -it -v $(pwd)/../:/code/project $platform /code/clean
 	docker run --rm -it -v $(pwd)/../:/code/project $platform /code/build
+	docker run --rm -it -v $(pwd)/../:/code/project $platform /code/test_build
 done

@@ -63,5 +63,8 @@ This is done by specifying the image name::
   # Build the project.
   sudo docker run --rm -it -v /home/henrikn/Projekt/csp/:/code/project csp:ubuntu_18.04 /code/build
 
+  # Some very simple steps to see that csplib and cspsim is loading from python.
+  sudo docker run --rm -it -v /home/henrikn/Projekt/csp/:/code/project csp:ubuntu_18.04 /code/test_build
+
   # 'Clean' the build.
   sudo docker run --rm -it -v /home/henrikn/Projekt/csp/:/code/project csp:ubuntu_18.04 /code/clean

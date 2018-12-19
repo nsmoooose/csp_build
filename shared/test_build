@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+cd csp
+
+# Make it possible for all the python scripts to be found
+# correctly when building and running the simulator.
+export PYTHONPATH=$(pwd)
+
+cd csp
+
+# Build the simulator.
+echo "Testing load of csplib"
+python2 -c "import csplib"
+
+echo "Testing load of cspsim"
+python2 -c "import cspsim"
