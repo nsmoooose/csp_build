@@ -10,9 +10,8 @@ RUN mkdir /code
 WORKDIR /code
 RUN git clone https://github.com/nsmoooose/csp-osgal
 WORKDIR /code/csp-osgal
-RUN cmake -DCMAKE_INSTALL_PREFIX=/usr .
+RUN cmake -DLIB_POSTFIX=64 -DCMAKE_INSTALL_PREFIX=/usr .
 RUN make
 RUN make install
 WORKDIR /code/project
 ADD shared/* /code/
-
