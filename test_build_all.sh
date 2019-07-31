@@ -2,9 +2,9 @@
 set -e
 
 [ -d build_result ] || mkdir build_result
-rm build_result/*
+rm -rf build_result/*
 
-platforms=(csp:ubuntu_18.04 csp:debian_9.6 csp:fedora_28 csp:fedora_29)
+platforms=(csp:ubuntu_18.04 csp:ubuntu_19.04 csp:debian_9.6 csp:debian_10.0 csp:fedora_28 csp:fedora_29 csp:fedora_30)
 for platform in ${platforms[@]}; do
 	echo "TEST BUILD ON $platform"
 	{
