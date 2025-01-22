@@ -10,4 +10,4 @@ export PYTHONPATH=$(pwd)
 cd csp
 
 # Build the simulator.
-python2 /usr/bin/scons -c all
+scons -c all

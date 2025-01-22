@@ -11,8 +11,7 @@ Linux distributions.
 The current list of distributions tested are:
 
 * Ubuntu 18.04
-* Fedora 28
-* Fedora 29
+* Fedora 41
 * Debian 9.6
 
 The testing are done utilizing docker. One container exist for every target

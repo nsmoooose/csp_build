@@ -11,7 +11,7 @@ cd csp
 
 # Build the simulator.
 echo "Testing load of csplib"
-python2 -c "import csplib"
+python3 -c "import csplib"
 
 echo "Testing load of cspsim"
-python2 -c "import cspsim"
+python3 -c "import cspsim"

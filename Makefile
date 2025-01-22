@@ -5,9 +5,7 @@ debian:
 	docker build -f debian_10.0/Dockerfile . -t csp:debian_10.0
 
 fedora:
-	docker build -f fedora_28/Dockerfile . -t csp:fedora_28
-	docker build -f fedora_29/Dockerfile . -t csp:fedora_29
-	docker build -f fedora_30/Dockerfile . -t csp:fedora_30
+	docker build -f fedora_41/Dockerfile . -t csp:fedora_41
 
 ubuntu:
 	docker build -f ubuntu_18.04/Dockerfile . -t csp:ubuntu_18.04
